@@ -55,6 +55,9 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--If I use PostgreSQL in Docker while running my Spring Boot application in the local JVM,
+		the spring-boot-testcontainers dependency will manage the lifecycle of the PostgreSQL container.
+		It will ensure that the PostgreSQL container is automatically created when tests -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-testcontainers</artifactId>
